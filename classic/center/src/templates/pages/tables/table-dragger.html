@@ -1,0 +1,312 @@
+---
+title: Table Dragger
+---
+
+{{#extend "layout-default"}}
+  {{#content "css_vendor" mode="append"}}
+    <link rel="stylesheet" href="{{global}}/vendor/table-dragger/table-dragger.css">
+  {{/content}}
+
+
+  {{#content "js_vendor" mode="append"}}
+    <script src="{{global}}/vendor/table-dragger/table-dragger.min.js"></script>
+  {{/content}}
+
+
+  {{#content "scripts" mode="replace"}}
+    <script src="{{assets}}/examples/js/tables/table-dragger.js"></script>
+  {{/content}}
+
+  {{#content "body"}}
+
+    <!-- Page -->
+    <div class="page">
+      <div class="page-header">
+        <h1 class="page-title">Table Dragger</h1>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{{dest 'index.html'}}">Home</a></li>
+          <li class="breadcrumb-item"><a href="javascript:void(0)">Tables</a></li>
+          <li class="breadcrumb-item active">Responsive</li>
+        </ol>
+        <div class="page-header-actions">
+          <a class="btn btn-sm btn-default btn-outline btn-round" href="https://sindu12jun.github.io/table-dragger/"
+            target="_blank">
+        <i class="icon wb-link" aria-hidden="true"></i>
+        <span class="hidden-sm-down">Official Website</span>
+      </a>
+        </div>
+      </div>
+
+      <div class="page-content container-fluid">
+        <div class="row">
+          <div class="col-xl-6">
+            <!-- Panel Default -->
+            <div class="panel">
+              <header class="panel-heading">
+                <h3 class="panel-title">
+                  Default
+                  <span class="panel-desc">
+                    With no options, sort columns, handler was the first row
+                  </span>
+                </h3>
+              </header>
+
+              <div class="panel-body">
+                <table id="default-table" class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Movie Title<i class="table-dragger-handle"></i></th>
+                      <th>Genre<i class="table-dragger-handle"></i></th>
+                      <th>Year<i class="table-dragger-handle"></i></th>
+                      <th>Gross<i class="table-dragger-handle"></i></th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>Star Wars</td>
+                    <td>Adventure, Sci-fi</td>
+                    <td>1977</td>
+                    <td>$460,935,665</td>
+                  </tr>
+                  <tr>
+                    <td>Howard The Duck</td>
+                    <td>"Comedy"</td>
+                    <td>1986</td>
+                    <td>$16,295,774</td>
+                  </tr>
+                  <tr>
+                    <td>American Graffiti</td>
+                    <td>Comedy, Drama</td>
+                    <td>1973</td>
+                    <td>$115,000,000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!-- End Panel Default -->
+
+            <!-- Panel Sort Rows -->
+            <div class="panel">
+              <header class="panel-heading">
+                <h3 class="panel-title">
+                  Sort Rows
+                  <span class="panel-desc">
+                    Sort rows, handler was the first column
+                  </span>
+                </h3>
+              </header>
+
+              <div class="panel-body">
+                <table id="row-table" class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Movie Title<i class="table-dragger-handle"></i></th>
+                      <th>Genre</th>
+                      <th>Year</th>
+                      <th>Gross</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>Star Wars<i class="table-dragger-handle"></i></td>
+                    <td>Adventure, Sci-fi</td>
+                    <td>1977</td>
+                    <td>$460,935,665</td>
+                  </tr>
+                  <tr>
+                    <td>Howard The Duck<i class="table-dragger-handle"></i></td>
+                    <td>"Comedy"</td>
+                    <td>1986</td>
+                    <td>$16,295,774</td>
+                  </tr>
+                  <tr>
+                    <td>American Graffiti<i class="table-dragger-handle"></i></td>
+                    <td>Comedy, Drama</td>
+                    <td>1973</td>
+                    <td>$115,000,000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!-- End Panel Sort Rows -->
+
+            <!-- Panel Only Body -->
+            <div class="panel">
+              <header class="panel-heading">
+                <h3 class="panel-title">
+                  Only Body
+                  <span class="panel-desc">
+                    Setting onlyBody to true in row mode, user can only lift rows in tBody
+                  </span>
+                </h3>
+              </header>
+              <div class="panel-body">
+                <table id="only-body-table" class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Movie Title</th>
+                      <th>Genre</th>
+                      <th>Year</th>
+                      <th>Gross</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>Star Wars<i class="table-dragger-handle"></i></td>
+                    <td>Adventure, Sci-fi</td>
+                    <td>1977</td>
+                    <td>$460,935,665</td>
+                  </tr>
+                  <tr>
+                    <td>Howard The Duck<i class="table-dragger-handle"></i></td>
+                    <td>"Comedy"</td>
+                    <td>1986</td>
+                    <td>$16,295,774</td>
+                  </tr>
+                  <tr>
+                    <td>American Graffiti<i class="table-dragger-handle"></i></td>
+                    <td>Comedy, Drama</td>
+                    <td>1973</td>
+                    <td>$115,000,000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!-- End Panel Only Body -->
+          </div>
+
+          <div class="col-xl-6">
+            <!-- Panel Handler  -->
+            <div class="panel">
+              <header class="panel-heading">
+                <h3 class="panel-title">
+                  Handler
+                  <span class="panel-desc">
+                    Specify drag handler wherever within the table
+                  </span>
+                </h3>
+              </header>
+              <div class="panel-body">
+                <table id="handle-table" class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Movie Title <i class="table-dragger-handle">dragme</i></th>
+                      <th>Genre</th>
+                      <th>Year</th>
+                      <th>Gross</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>Star Wars</td>
+                    <td>Adventure, Sci-fi</td>
+                    <td>1977</td>
+                    <td>$460,935,665</td>
+                  </tr>
+                  <tr>
+                    <td>Howard The Duck</td>
+                    <td>"Comedy"</td>
+                    <td>1986</td>
+                    <td>$16,295,774</td>
+                  </tr>
+                  <tr>
+                    <td>American Graffiti</td>
+                    <td>Comedy, Drama</td>
+                    <td>1973</td>
+                    <td>$115,000,000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!-- End Panel Handler -->
+
+            <!-- Panel Free -->
+            <div class="panel">
+              <header class="panel-heading">
+                <h3 class="panel-title">
+                  Free
+                  <span class="panel-desc">
+                    After mousedown, move mouse horizontally or vertically, see what happens. Don't
+                    forget to specify drag handler
+                  </span>
+                </h3>
+              </header>
+              <div class="panel-body">
+                <table id="free-table" class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Movie Title</th>
+                      <th>Genre</th>
+                      <th>Year</th>
+                      <th>Gross</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>Star Wars<i class="table-dragger-handle">dragme</i></td>
+                    <td>Adventure, Sci-fi</td>
+                    <td>1977</td>
+                    <td>$460,935,665</td>
+                  </tr>
+                  <tr>
+                    <td>Howard The Duck</td>
+                    <td>"Comedy"</td>
+                    <td>1986</td>
+                    <td>$16,295,774</td>
+                  </tr>
+                  <tr>
+                    <td>American Graffiti</td>
+                    <td>Comedy, Drama</td>
+                    <td>1973</td>
+                    <td>$115,000,000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!-- End Panel Free -->
+
+            <!-- Panel Event -->
+            <div class="panel">
+              <header class="panel-heading">
+                <h3 class="panel-title">
+                  Event
+                  <span class="panel-desc">
+                    Add callback when event trigger, open devtool see what happens
+                  </span>
+                </h3>
+              </header>
+              <div class="panel-body">
+                <table id="event-table" class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Movie Title</th>
+                      <th>Genre</th>
+                      <th>Year</th>
+                      <th>Gross</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>Star Wars <i class="table-dragger-handle">dragme</i></td>
+                    <td>Adventure, Sci-fi</td>
+                    <td>1977</td>
+                    <td>$460,935,665</td>
+                  </tr>
+                  <tr>
+                    <td>Howard The Duck</td>
+                    <td>"Comedy"</td>
+                    <td>1986</td>
+                    <td>$16,295,774</td>
+                  </tr>
+                  <tr>
+                    <td>American Graffiti</td>
+                    <td>Comedy, Drama</td>
+                    <td>1973</td>
+                    <td>$115,000,000</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <!-- End Panel Event -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Page -->
+
+  {{/content}}
+{{/extend}}

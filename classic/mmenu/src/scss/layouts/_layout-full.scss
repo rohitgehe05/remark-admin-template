@@ -1,0 +1,16 @@
+
+.layout-full {
+  height: 100%;
+  padding-top: 0 !important;
+
+  .page {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  > .loader {
+    margin-left: 0 !important;
+  }
+}

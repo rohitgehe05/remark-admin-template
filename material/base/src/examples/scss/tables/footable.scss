@@ -1,0 +1,12 @@
+#exampleCustomFilter {
+  .footable-filtering {
+    display:none;
+  }
+}
+
+//for edit modal required label 20170302 ---Kevin_y
+.form-group.required .control-label:after {
+  content:"*";
+  color:red;
+  margin-left: 4px;
+}

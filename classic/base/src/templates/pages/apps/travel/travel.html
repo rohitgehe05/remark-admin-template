@@ -1,0 +1,602 @@
+---
+title: Travel
+body_class: app-travel
+---
+
+{{#extend "layout-default"}}
+  {{#content "css_vendor" mode="append"}}
+    <link rel="stylesheet" href="{{global}}/vendor/mapbox-js/mapbox.css">
+  {{/content}}
+
+  {{#content "css" mode="prepend"}}
+    <link rel="stylesheet" href="{{assets}}/examples/css/apps/travel.css">
+  {{/content}}
+
+
+  {{#content "js_vendor" mode="append"}}
+    <script src="{{global}}/vendor/raty/jquery.raty.js"></script>
+    <script src="{{global}}/vendor/slidepanel/jquery-slidePanel.js"></script>
+    <script src="{{global}}/vendor/mapbox-js/mapbox.js"></script>
+    <script src="{{global}}/vendor/mapbox-js/leaflet.markercluster.js"></script>
+  {{/content}}
+
+  {{#content "js" mode="append"}}
+    <script src="{{global}}/js/Plugin/raty.js"></script>
+  {{/content}}
+
+  {{#content "js" mode="append"}}
+    <script src="{{assets}}/js/Site.js"></script>
+    <script src="{{assets}}/js/App/Travel.js"></script>
+  {{/content}}
+
+  {{#content "scripts" mode="replace"}}
+    <script src="{{assets}}/examples/js/apps/travel.js"></script>
+  {{/content}}
+
+  {{#content "body"}}
+
+    <!-- Page -->
+    <div class="page">
+      <!-- Travel Options Siderbar -->
+      <div class="page-aside">
+        <div class="page-aside-switch">
+          <i class="icon wb-chevron-left" aria-hidden="true"></i>
+          <i class="icon wb-chevron-right" aria-hidden="true"></i>
+        </div>
+        <div class="page-aside-inner nav-tabs-animate">
+          <div class="page-nav-tabs">
+            <ul class="nav nav-tabs nav-tabs-line" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link active" data-toggle="tab" href="#spots" aria-controls="travel-spots"
+                  aria-expanded="false" role="tab">Spots</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" data-toggle="tab" href="#hotels" aria-controls="travel-hotels"
+                  aria-expanded="true" role="tab">Hotels</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link" data-toggle="tab" href="#reviews" aria-controls="travel-reviews"
+                  aria-expanded="false" role="tab">Reviews</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-aside-content page-aside-scroll">
+            <div data-role="container">
+              <div data-role="content">
+                <div class="tab-content">
+                  <div class="tab-pane animation-fade active" id="spots" role="tabpanel" aria-expanded="ture">
+                    <div class="spots-list row">
+                      <div class="col-xxl-6 spot-info" data-spot-id="s_1">
+                        <div class="card card-shadow">
+                          <div class="card-header cover overlay">
+                            <img class="cover-image" src="../../../../global/photos/animal-1-720x480.jpg" alt="spot_photo"
+                            />
+                            <div class="overlay-panel">
+                              <div class="card-actions float-right">
+                                <a href="javascript:void(0)">
+                                <i class="icon wb-heart-outline text" aria-hidden="true"></i>
+                                <i class="icon wb-heart text-active" aria-hidden="true"></i>
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-block">
+                            <h3 class="card-title item-title">
+                              The Mountain in Japan
+                            </h3>
+                            <span class="item-name">
+                              dolore
+                            </span>
+                            <p class="card-text type-link">
+                              <small>
+                                Posted in
+                                <a href="javascript:void(0)">
+                                  ad
+                                </a>
+                              </small>
+                            </p>
+                            <p class="card-text">
+                              Deserunt ex quis ea elit amet non sit. Consectetur eu mollit proident incididunt
+                              est nostrud. Laboris quis quis enim voluptate amet.
+                              Occaecat aliqua sint minim dolor. Duis pariatur occaecat
+                              id occaecat ea. Do do sint enim ut deserunt nostrud
+                              deserunt mollit ad. Ea dolore est excepteur duis
+                              consectetur velit aliquip est. Et et est ex incididunt
+                              nisi esse nisi.
+                            </p>
+                          </div>
+                          <div class="card-block">
+                            <div class="rating" data-score="4" data-nummber="5" data-plugin="rating">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-6 spot-info" data-spot-id="s_2">
+                        <div class="card card-shadow">
+                          <div class="card-header cover overlay">
+                            <img class="cover-image" src="../../../../global/photos/city-1-720x480.jpg" alt="spot_photo"
+                            />
+                            <div class="overlay-panel">
+                              <div class="card-actions float-right">
+                                <a href="javascript:void(0)">
+                                <i class="icon wb-heart-outline text" aria-hidden="true"></i>
+                                <i class="icon wb-heart text-active" aria-hidden="true"></i>
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-block">
+                            <h3 class="card-title item-title">
+                              The City of French
+                            </h3>
+                            <span class="item-name">
+                              in
+                            </span>
+                            <p class="card-text type-link">
+                              <small>
+                                Posted in
+                                <a href="javascript:void(0)">
+                                  incididunt
+                                </a>
+                              </small>
+                            </p>
+                            <p class="card-text">
+                              Culpa culpa dolore ex laborum ad Lorem aute proident reprehenderit. Quis occaecat
+                              quis commodo sint nostrud excepteur deserunt sint.
+                              Officia ex ad nostrud esse sint ex consequat reprehenderit
+                              fugiat. Sunt aliquip dolor laboris elit enim deserunt
+                              proident dolor. Consectetur Lorem dolore dolor nulla
+                              culpa nostrud. Deserunt voluptate est exercitation
+                              irure. Eu dolor et Lorem ad culpa. Officia veniam
+                              culpa sint excepteur minim esse.
+                            </p>
+                          </div>
+                          <div class="card-block">
+                            <div class="rating" data-score="3" data-nummber="5" data-plugin="rating">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-6 spot-info" data-spot-id="s_3">
+                        <div class="card card-shadow">
+                          <div class="card-header cover overlay">
+                            <img class="cover-image" src="../../../../global/photos/city-2-720x480.jpg" alt="spot_photo"
+                            />
+                            <div class="overlay-panel">
+                              <div class="card-actions float-right">
+                                <a href="javascript:void(0)">
+                                <i class="icon wb-heart-outline text" aria-hidden="true"></i>
+                                <i class="icon wb-heart text-active" aria-hidden="true"></i>
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-block">
+                            <h3 class="card-title item-title">
+                              The Bund of Shanghai
+                            </h3>
+                            <span class="item-name">
+                              ullamco
+                            </span>
+                            <p class="card-text type-link">
+                              <small>
+                                Posted in
+                                <a href="javascript:void(0)">
+                                  anim
+                                </a>
+                              </small>
+                            </p>
+                            <p class="card-text">
+                              Exercitation voluptate eiusmod nostrud exercitation velit aute aute eu mollit.
+                              Enim in esse nostrud dolor est sint velit dolor.
+                              Elit officia cillum aute non mollit amet sunt. Commodo
+                              ipsum aliqua occaecat magna sunt Lorem cillum officia
+                              eu. Ullamco nostrud in velit laborum labore elit
+                              ullamco dolore. Proident ullamco ex nulla tempor
+                              consectetur officia incididunt velit excepteur. Sint
+                              sint qui adipisicing officia ad aliquip labore consequat.
+                              Aliquip aliqua reprehenderit culpa amet sit sit.
+                            </p>
+                          </div>
+                          <div class="card-block">
+                            <div class="rating" data-score="5" data-nummber="5" data-plugin="rating">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-6 spot-info" data-spot-id="s_4">
+                        <div class="card card-shadow">
+                          <div class="card-header cover overlay">
+                            <img class="cover-image" src="../../../../global/photos/city-4-720x480.jpg" alt="spot_photo"
+                            />
+                            <div class="overlay-panel">
+                              <div class="card-actions float-right">
+                                <a href="javascript:void(0)">
+                                <i class="icon wb-heart-outline text" aria-hidden="true"></i>
+                                <i class="icon wb-heart text-active" aria-hidden="true"></i>
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-block">
+                            <h3 class="card-title item-title">
+                              The Park in New York
+                            </h3>
+                            <span class="item-name">
+                              velit
+                            </span>
+                            <p class="card-text type-link">
+                              <small>
+                                Posted in
+                                <a href="javascript:void(0)">
+                                  duis
+                                </a>
+                              </small>
+                            </p>
+                            <p class="card-text">
+                              Minim pariatur nostrud ea elit eiusmod esse ut deserunt ea. Ut enim excepteur non
+                              cillum dolor aute aliquip. Officia aute veniam et
+                              esse culpa. In nulla consectetur commodo voluptate
+                              laboris commodo ut culpa irure. Aliquip enim incididunt
+                              consequat aliquip reprehenderit non. Aliquip quis
+                              ex exercitation aliqua. Duis magna sit amet aliquip
+                              irure aliquip nulla. Ipsum fugiat tempor sint enim
+                              eu enim.
+                            </p>
+                          </div>
+                          <div class="card-block">
+                            <div class="rating" data-score="2" data-nummber="5" data-plugin="rating">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-6 spot-info" data-spot-id="s_5">
+                        <div class="card card-shadow">
+                          <div class="card-header cover overlay">
+                            <img class="cover-image" src="../../../../global/photos/city-3-720x480.jpg" alt="spot_photo"
+                            />
+                            <div class="overlay-panel">
+                              <div class="card-actions float-right">
+                                <a href="javascript:void(0)">
+                                <i class="icon wb-heart-outline text" aria-hidden="true"></i>
+                                <i class="icon wb-heart text-active" aria-hidden="true"></i>
+                              </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-block">
+                            <h3 class="card-title item-title">
+                              The street in Beijing
+                            </h3>
+                            <span class="item-name">
+                              nisi
+                            </span>
+                            <p class="card-text type-link">
+                              <small>
+                                Posted in
+                                <a href="javascript:void(0)">
+                                  incididunt
+                                </a>
+                              </small>
+                            </p>
+                            <p class="card-text">
+                              Sunt est labore laboris occaecat. Consequat commodo anim sint proident qui Lorem
+                              magna sint. Magna sunt officia aliqua laborum ea
+                              ex sit ex. Sunt exercitation eiusmod cillum excepteur
+                              pariatur aute aliqua. Occaecat cillum Lorem veniam
+                              nostrud ad amet. In ipsum exercitation esse sint
+                              et occaecat. Velit ea dolore enim occaecat in nulla.
+                              Est sunt pariatur amet consectetur voluptate ipsum
+                              culpa commodo proident.
+                            </p>
+                          </div>
+                          <div class="card-block">
+                            <div class="rating" data-score="4" data-nummber="5" data-plugin="rating">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane animation-fade" id="hotels" role="tabpanel" aria-expanded="false">
+                    <div class="hotels-list row">
+                      <div class="col-lg-6 hotel-info" data-hotel-id="h_1">
+                        <div class="card card-block card-inverse card-primary">
+                          <div class="hotel-img">
+                            <img src="../../../../global/photos/city-4-720x480.jpg">
+                          </div>
+                          <h4 class="card-title item-name">
+                            sit aliqua
+                          </h4>
+                          <p class="card-text item-title">
+                            Eiusmod officia aliqua reprehenderit pariatur. In excepteur laborum est officia
+                            ea dolor nostrud. Ullamco consequat officia veniam
+                            pariatur tempor magna.
+                          </p>
+                          <div class="rating" data-plugin="rating" data-score="4" data-nummber="5" data-read-only="true">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 hotel-info" data-hotel-id="h_2">
+                        <div class="card card-block card-inverse card-success">
+                          <div class="hotel-img">
+                            <img src="../../../../global/photos/city-5-720x480.jpg">
+                          </div>
+                          <h4 class="card-title item-name">
+                            irure nisi
+                          </h4>
+                          <p class="card-text item-title">
+                            Quis et consectetur incididunt ipsum tempor nulla eiusmod. Voluptate pariatur qui
+                            culpa consequat. Aliquip nulla cupidatat et ipsum duis
+                            elit.
+                          </p>
+                          <div class="rating" data-plugin="rating" data-score="5" data-nummber="5" data-read-only="true">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 hotel-info" data-hotel-id="h_3">
+                        <div class="card card-block card-inverse card-danger">
+                          <div class="hotel-img">
+                            <img src="../../../../global/photos/city-7-960x480.jpg">
+                          </div>
+                          <h4 class="card-title item-name">
+                            amet ea
+                          </h4>
+                          <p class="card-text item-title">
+                            Exercitation elit in mollit aliqua sit labore. Elit tempor magna amet elit cupidatat.
+                            Et ea amet ipsum ut.
+                          </p>
+                          <div class="rating" data-plugin="rating" data-score="2" data-nummber="5" data-read-only="true">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 hotel-info" data-hotel-id="h_4">
+                        <div class="card card-block card-inverse card-info">
+                          <div class="hotel-img">
+                            <img src="../../../../global/photos/city-8-960x640.jpg">
+                          </div>
+                          <h4 class="card-title item-name">
+                            culpa ullamco
+                          </h4>
+                          <p class="card-text item-title">
+                            Pariatur enim commodo sunt quis eu elit adipisicing. Deserunt aliqua laborum minim
+                            mollit. Qui anim ex sint ad est.
+                          </p>
+                          <div class="rating" data-plugin="rating" data-score="3" data-nummber="5" data-read-only="true">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 hotel-info" data-hotel-id="h_5">
+                        <div class="card card-block card-inverse card-success">
+                          <div class="hotel-img">
+                            <img src="../../../../global/photos/city-6-960x640.jpg">
+                          </div>
+                          <h4 class="card-title item-name">
+                            esse commodo
+                          </h4>
+                          <p class="card-text item-title">
+                            Elit velit nisi non minim cillum magna velit. Sunt voluptate aute laboris Lorem
+                            elit. Mollit anim Lorem cupidatat et.
+                          </p>
+                          <div class="rating" data-plugin="rating" data-score="4" data-nummber="5" data-read-only="true">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 hotel-info" data-hotel-id="h_6">
+                        <div class="card card-block card-inverse card-primary">
+                          <div class="hotel-img">
+                            <img src="../../../../global/photos/city-9-960x640.jpg">
+                          </div>
+                          <h4 class="card-title item-name">
+                            nisi commodo
+                          </h4>
+                          <p class="card-text item-title">
+                            Esse deserunt non minim magna. In Lorem laborum dolor pariatur non. Dolor ipsum
+                            magna mollit eiusmod.
+                          </p>
+                          <div class="rating" data-plugin="rating" data-score="4" data-nummber="5" data-read-only="true">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane animation-fade page-content-table bg-white" id="reviews" role="tabpanel"
+                    aria-expanded="false">
+                    <ul class="reviews-list">
+                      <li class="reviews-header">
+                        <p>
+                          <span class="float-right pl-10"><b class="percent">97%</b>approval rating</span>
+                          <span>438 Have review this place</span>
+                        </p>
+                      </li>
+                      <li>
+                        <ul class="list-group list-group-dividered reviews-list">
+                          <li class="list-group-item review-info" data-review-id="">
+                            <div class="media">
+                              <div class="pr-20">
+                                <a class="avatar" href="javascript:void(0)">
+                                  <img class="img-responsive" src="{{global}}/portraits/undefined">
+                                </a>
+                              </div>
+                              <div class="media-body content">
+                                <h5 class="mt-0 mb-5 item-name">John very like the spots</h5>
+                                <div class="rating" data-plugin="rating" data-score="5" data-number="5" data-read-only="true">
+                                </div>
+                              </div>
+                              <div class="pl-20 align-self-center">
+                                <span class="item-title">The Mountain in Japan</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item review-info" data-review-id="r_1">
+                            <div class="media">
+                              <div class="pr-20">
+                                <a class="avatar" href="javascript:void(0)">
+                                  <img class="img-responsive" src="{{global}}/portraits/5.jpg">
+                                </a>
+                              </div>
+                              <div class="media-body content">
+                                <h5 class="mt-0 mb-5 item-name">adipisicing deserunt</h5>
+                                <div class="rating" data-plugin="rating" data-score="4" data-number="5" data-read-only="true">
+                                </div>
+                              </div>
+                              <div class="pl-20 align-self-center">
+                                <span class="item-title">sint duis</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item review-info" data-review-id="r_2">
+                            <div class="media">
+                              <div class="pr-20">
+                                <a class="avatar" href="javascript:void(0)">
+                                  <img class="img-responsive" src="{{global}}/portraits/6.jpg">
+                                </a>
+                              </div>
+                              <div class="media-body content">
+                                <h5 class="mt-0 mb-5 item-name">velit nulla</h5>
+                                <div class="rating" data-plugin="rating" data-score="2" data-number="5" data-read-only="true">
+                                </div>
+                              </div>
+                              <div class="pl-20 align-self-center">
+                                <span class="item-title">excepteur aliquip</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item review-info" data-review-id="r_3">
+                            <div class="media">
+                              <div class="pr-20">
+                                <a class="avatar" href="javascript:void(0)">
+                                  <img class="img-responsive" src="{{global}}/portraits/7.jpg">
+                                </a>
+                              </div>
+                              <div class="media-body content">
+                                <h5 class="mt-0 mb-5 item-name">pariatur magna</h5>
+                                <div class="rating" data-plugin="rating" data-score="5" data-number="5" data-read-only="true">
+                                </div>
+                              </div>
+                              <div class="pl-20 align-self-center">
+                                <span class="item-title">ad fugiat</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item review-info" data-review-id="r_4">
+                            <div class="media">
+                              <div class="pr-20">
+                                <a class="avatar" href="javascript:void(0)">
+                                  <img class="img-responsive" src="{{global}}/portraits/8.jpg">
+                                </a>
+                              </div>
+                              <div class="media-body content">
+                                <h5 class="mt-0 mb-5 item-name">mollit officia</h5>
+                                <div class="rating" data-plugin="rating" data-score="3" data-number="5" data-read-only="true">
+                                </div>
+                              </div>
+                              <div class="pl-20 align-self-center">
+                                <span class="item-title">et culpa</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item review-info" data-review-id="r_5">
+                            <div class="media">
+                              <div class="pr-20">
+                                <a class="avatar" href="javascript:void(0)">
+                                  <img class="img-responsive" src="{{global}}/portraits/1.jpg">
+                                </a>
+                              </div>
+                              <div class="media-body content">
+                                <h5 class="mt-0 mb-5 item-name">ea aute</h5>
+                                <div class="rating" data-plugin="rating" data-score="4" data-number="5" data-read-only="true">
+                                </div>
+                              </div>
+                              <div class="pl-20 align-self-center">
+                                <span class="item-title">dolore commodo</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item review-info" data-review-id="r_6">
+                            <div class="media">
+                              <div class="pr-20">
+                                <a class="avatar" href="javascript:void(0)">
+                                  <img class="img-responsive" src="{{global}}/portraits/10.jpg">
+                                </a>
+                              </div>
+                              <div class="media-body content">
+                                <h5 class="mt-0 mb-5 item-name">ut laborum</h5>
+                                <div class="rating" data-plugin="rating" data-score="1" data-number="5" data-read-only="true">
+                                </div>
+                              </div>
+                              <div class="pl-20 align-self-center">
+                                <span class="item-title">esse quis</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item review-info" data-review-id="r_7">
+                            <div class="media">
+                              <div class="pr-20">
+                                <a class="avatar" href="javascript:void(0)">
+                                  <img class="img-responsive" src="{{global}}/portraits/2.jpg">
+                                </a>
+                              </div>
+                              <div class="media-body content">
+                                <h5 class="mt-0 mb-5 item-name">aliqua aliqua</h5>
+                                <div class="rating" data-plugin="rating" data-score="3" data-number="5" data-read-only="true">
+                                </div>
+                              </div>
+                              <div class="pl-20 align-self-center">
+                                <span class="item-title">ullamco minim</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item review-info" data-review-id="r_8">
+                            <div class="media">
+                              <div class="pr-20">
+                                <a class="avatar" href="javascript:void(0)">
+                                  <img class="img-responsive" src="{{global}}/portraits/11.jpg">
+                                </a>
+                              </div>
+                              <div class="media-body content">
+                                <h5 class="mt-0 mb-5 item-name">eu enim</h5>
+                                <div class="rating" data-plugin="rating" data-score="1" data-number="5" data-read-only="true">
+                                </div>
+                              </div>
+                              <div class="pl-20 align-self-center">
+                                <span class="item-title">enim anim</span>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="list-group-item review-info" data-review-id="r_9">
+                            <div class="media">
+                              <div class="pr-20">
+                                <a class="avatar" href="javascript:void(0)">
+                                  <img class="img-responsive" src="{{global}}/portraits/2.jpg">
+                                </a>
+                              </div>
+                              <div class="media-body content">
+                                <h5 class="mt-0 mb-5 item-name">officia elit</h5>
+                                <div class="rating" data-plugin="rating" data-score="5" data-number="5" data-read-only="true">
+                                </div>
+                              </div>
+                              <div class="pl-20 align-self-center">
+                                <span class="item-title">occaecat duis</span>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Travel Options Siderbar -->
+      <div class="page-main">
+        <div id="map">
+        </div>
+      </div>
+    </div>
+
+  {{/content}}
+{{/extend}}

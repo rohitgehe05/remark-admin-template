@@ -1,0 +1,576 @@
+---
+  -
+    title: "General"
+    items:
+      -
+        icon: "md-view-compact"
+        title: "Layouts"
+        slug: "layouts"
+        children:
+          -
+            title: "Grid Scaffolding"
+            link: "layouts/grids.html"
+          -
+            title: "Layout Grid"
+            link: "layouts/layout-grid.html"
+          -
+            title: "Different Headers"
+            link: "layouts/headers.html"
+          -
+            title: "Panel Transition"
+            link: "layouts/panel-transition.html"
+          -
+            title: "Boxed Layout"
+            link: "layouts/boxed.html"
+          -
+            title: "Two Columns"
+            link: "layouts/two-columns.html"
+          -
+            title: "Bordered Header"
+            link: "layouts/bordered-header.html"
+          -
+            title: "Page Aside"
+            slug: "layouts/aside"
+            children:
+              -
+                title: "Left Static"
+                link: "layouts/aside-left-static.html"
+              -
+                title: "Right Static"
+                link: "layouts/aside-right-static.html"
+              -
+                title: "Left Fixed"
+                link: "layouts/aside-left-fixed.html"
+              -
+                title: "Right Fixed"
+                link: "layouts/aside-right-fixed.html"
+      -
+        icon: "md-google-pages"
+        title: "Pages"
+        slug: "pages"
+        children:
+          -
+            title: "Errors"
+            slug: "pages/error"
+            children:
+              -
+                title: "400"
+                link: "pages/error-400.html"
+              -
+                title: "403"
+                link: "pages/error-403.html"
+              -
+                title: "404"
+                link: "pages/error-404.html"
+              -
+                title: "500"
+                link: "pages/error-500.html"
+              -
+                title: "503"
+                link: "pages/error-503.html"
+          # -
+          #   title: "Contact"
+          #
+          #   link: "pages/contact.html"
+          # -
+          #   title: "Coming Soon"
+          #
+          #   link: "pages/coming-soon.html"
+          -
+            title: "FAQ"
+            link: "pages/faq.html"
+          -
+            title: "Gallery"
+            link: "pages/gallery.html"
+          -
+            title: "Gallery Grid"
+            link: "pages/gallery-grid.html"
+          -
+            title: "Search Result"
+            link: "pages/search-result.html"
+          -
+            title: "Maps"
+            slug: "pages/map"
+            children:
+              -
+                title: "Google Maps"
+                link: "pages/map-google.html"
+              -
+                title: "Vector Maps"
+                link: "pages/map-vector.html"
+          -
+            title: "Maintenance"
+            link: "pages/maintenance.html"
+          -
+            title: "Forgot Password"
+            link: "pages/forgot-password.html"
+          -
+            title: "Lockscreen"
+            link: "pages/lockscreen.html"
+          -
+            title: "Login"
+            link: "pages/login.html"
+          -
+            title: "Register"
+            link: "pages/register.html"
+          -
+            title: "Login V2"
+            link: "pages/login-v2.html"
+          -
+            title: "Register V2"
+            link: "pages/register-v2.html"
+            label:
+              modifier: "badge-info badge-round"
+              text: "new"
+          -
+            title: "Login V3"
+            link: "pages/login-v3.html"
+          -
+            title: "Register V3"
+            link: "pages/register-v3.html"
+          -
+            title: "User List"
+            link: "pages/user.html"
+          -
+            title: "Invoice"
+            link: "pages/invoice.html"
+          # -
+          #   title: "Landing Page"
+          #
+          #   link: "pages/landing.html"
+          -
+            title: "Blank Page"
+            link: "pages/blank.html"
+          -
+            title: "Email"
+            slug: "pages/email"
+            children:
+              -
+                title: "Articles"
+                link: "pages/email-articles.html"
+              -
+                title: "Welcome"
+                link: "pages/email-welcome.html"
+              -
+                title: "Post"
+                link: "pages/email-post.html"
+              -
+                title: "Thumbnail"
+                link: "pages/email-thumbnail.html"
+              -
+                title: "News"
+                link: "pages/email-news.html"
+          # -
+          #   title: "Single Post"
+          #
+          #   link: "pages/post.html"
+          -
+            title: "Code Editor"
+            link: "pages/code-editor.html"
+          -
+            title: "Profile"
+            link: "pages/profile.html"
+          -
+            title: "Profile V2"
+            link: "pages/profile-v2.html"
+            label:
+              modifier: "badge-info badge-round"
+              text: "new"
+          -
+            title: "Profile V3"
+            link: "pages/profile-v3.html"
+          -
+            title: "Sitemap"
+            link: "pages/site-map.html"
+          -
+            title: "Project"
+            link: "pages/project.html"
+  -
+    title: "Elements"
+    items:
+      -
+        icon: "md-palette"
+        title: "UI"
+        blocks: "3"
+        slugs:
+        -
+          slug: "uikit"
+        -
+          slug: "Advanced"
+        -
+          slug: "structure"
+        sections:
+        -
+          title: "Basic UI"
+          slug: "uikit"
+          children:
+            -
+              title: "Panel"
+              slug: "uikit/panel"
+              children:
+                -
+                  title: "Panel Structure"
+                  link: "uikit/panel-structure.html"
+                -
+                  title: "Panel Actions"
+                  link: "uikit/panel-actions.html"
+                -
+                  title: "Panel Portlets"
+                  link: "uikit/panel-portlets.html"
+            -
+              title: "Buttons"
+              link: "uikit/buttons.html"
+            -
+              title: "Cards"
+              link: "uikit/cards.html"
+            -
+              title: "Dropdowns"
+              link: "uikit/dropdowns.html"
+            -
+              title: "Icons"
+              link: "uikit/icons.html"
+            -
+              title: "List"
+              link: "uikit/list.html"
+            -
+              title: "Tooltip & Popover"
+              link: "uikit/tooltip-popover.html"
+            -
+              title: "Modals"
+              link: "uikit/modals.html"
+            -
+              title: "Tabs & Accordions"
+              link: "uikit/tabs-accordions.html"
+            -
+              title: "Images"
+              link: "uikit/images.html"
+            -
+              title: "Badges"
+              link: "uikit/badges.html"
+            -
+              title: "Progress Bars"
+              link: "uikit/progress-bars.html"
+            -
+              title: "Carousel"
+              link: "uikit/carousel.html"
+            -
+              title: "Typography"
+              link: "uikit/typography.html"
+            -
+              title: "Colors"
+              link: "uikit/colors.html"
+            -
+              title: "Utilties"
+              link: "uikit/utilities.html"
+        -
+          title: "Advanced UI"
+          slug: "advanced"
+          children:
+            -
+              title: "Tour"
+              class: "hidden-sm-down site-tour-trigger"
+            -
+              title: "Animation"
+              link: "advanced/animation.html"
+            -
+              title: "Highlight"
+              link: "advanced/highlight.html"
+            -
+              title: "Lightbox"
+              link: "advanced/lightbox.html"
+            -
+              title: "Scrollable"
+              link: "advanced/scrollable.html"
+            -
+              title: "Rating"
+              link: "advanced/rating.html"
+            -
+              title: "Context Menu"
+              link: "advanced/context-menu.html"
+            -
+              title: "Alertify"
+              link: "advanced/alertify.html"
+            -
+              title: "Masonry"
+              link: "advanced/masonry.html"
+            -
+              title: "Treeview"
+              link: "advanced/treeview.html"
+            -
+              title: "Toastr"
+              link: "advanced/toastr.html"
+            -
+              title: "Vector Maps"
+              link: "advanced/maps-vector.html"
+            -
+              title: "Google Maps"
+              link: "advanced/maps-google.html"
+            -
+              title: "Sortable & Nestable"
+              link: "advanced/sortable-nestable.html"
+            -
+              title: "Bootbox & Sweetalert"
+              link: "advanced/bootbox-sweetalert.html"
+        -
+          title: "Structure"
+          slug: "structure"
+          children:
+            -
+              title: "Alerts"
+              link: "structure/alerts.html"
+            -
+              title: "Ribbon"
+              link: "structure/ribbon.html"
+            -
+              title: "Pricing Tables"
+              link: "structure/pricing-tables.html"
+            -
+              title: "Overlay"
+              link: "structure/overlay.html"
+            -
+              title: "Cover"
+              link: "structure/cover.html"
+            -
+              title: "Simple Timeline"
+              link: "structure/timeline-simple.html"
+            -
+              title: "Timeline"
+              link: "structure/timeline.html"
+            -
+              title: "Step"
+              link: "structure/step.html"
+            -
+              title: "Comments"
+              link: "structure/comments.html"
+            -
+              title: "Media"
+              link: "structure/media.html"
+            -
+              title: "Chat"
+              link: "structure/chat.html"
+            -
+              title: "Testimonials"
+              link: "structure/testimonials.html"
+            -
+              title: "Nav"
+              link: "structure/nav.html"
+            -
+              title: "Navbars"
+              link: "structure/navbars.html"
+            -
+              title: "Blockquotes"
+              link: "structure/blockquotes.html"
+            -
+              title: "Pagination"
+              link: "structure/pagination.html"
+            -
+              title: "Breadcrumbs"
+              link: "structure/breadcrumbs.html"
+      -
+        icon: "md-puzzle-piece"
+        title: "Compents"
+        blocks: "3"
+        slugs:
+        -
+          slug: "forms"
+        -
+          slug: "tables"
+        -
+          slug: "charts"
+        sections:
+        -
+          title: "Forms"
+          slug: "forms"
+          children:
+            -
+              title: "General Elements"
+              link: "forms/general.html"
+            -
+              title: "Material Elements"
+              link: "forms/material.html"
+            -
+              title: "Advanced Elements"
+              link: "forms/advanced.html"
+            -
+              title: "Form Layouts"
+              link: "forms/layouts.html"
+            -
+              title: "Form Wizard"
+              link: "forms/wizard.html"
+            -
+              title: "Form Validation"
+              link: "forms/validation.html"
+            -
+              title: "Form Masks"
+              link: "forms/masks.html"
+            -
+              title: "Editors"
+              slug: "forms/editor"
+              children:
+                -
+                  title: "Summernote"
+                  link: "forms/editor-summernote.html"
+                -
+                  title: "Markdown"
+                  link: "forms/editor-markdown.html"
+                -
+                  title: "Ace Editor"
+                  link: "forms/editor-ace.html"
+            -
+              title: "Image Cropping"
+              link: "forms/image-cropping.html"
+            -
+              title: "File Uploads"
+              link: "forms/file-uploads.html"
+        -
+          title: "Tables"
+          slug: "tables"
+          children:
+            -
+              title: "Basic Tables"
+              link: "tables/basic.html"
+            -
+              title: "Bootstrap Tables"
+              link: "tables/bootstrap.html"
+            -
+              title: "floatThead"
+              link: "tables/floatthead.html"
+            -
+              title: "Responsive Tables"
+              link: "tables/responsive.html"
+            -
+              title: "Editable Tables"
+              link: "tables/editable.html"
+            -
+              title: "jsGrid"
+              link: "tables/jsgrid.html"
+            -
+              title: "FooTable"
+              link: "tables/footable.html"
+            -
+              title: "DataTables"
+              link: "tables/datatable.html"
+            -
+              title: "Jquery Tabledit"
+              link: "tables/jqtabledit.html"
+            -
+              title: "Table Dragger"
+              link: "tables/table-dragger.html"
+        -
+          title: "Chart"
+          slug: "charts"
+          children:
+            -
+              title: "Chart.js"
+              link: "charts/chartjs.html"
+            -
+              title: "Gauges"
+              link: "charts/gauges.html"
+            -
+              title: "Flot"
+              link: "charts/flot.html"
+            -
+              title: "Peity"
+              link: "charts/peity.html"
+            -
+              title: "Sparkline"
+              link: "charts/sparkline.html"
+            -
+              title: "Morris"
+              link: "charts/morris.html"
+            -
+              title: "Chartist.js"
+              link: "charts/chartist.html"
+            -
+              title: "Rickshaw"
+              link: "charts/rickshaw.html"
+            -
+              title: "Pie Progress"
+              link: "charts/pie-progress.html"
+            -
+              title: "C3"
+              link: "charts/c3.html"
+      -
+        icon: "md-widgets"
+        title: "Widgets"
+        slug: "widgets"
+        children:
+          -
+            title: "Statistics Widgets"
+            link: "widgets/statistics.html"
+          -
+            title: "Data Widgets"
+            link: "widgets/data.html"
+          -
+            title: "Blog Widgets"
+            link: "widgets/blog.html"
+          -
+            title: "Chart Widgets"
+            link: "widgets/chart.html"
+          -
+            title: "Social Widgets"
+            link: "widgets/social.html"
+          -
+            title: "Weather Widgets"
+            link: "widgets/weather.html"
+  -
+    title: "Apps"
+    items:
+      -
+        icon: "md-apps"
+        title: "Apps"
+        slug: "apps"
+        children:
+          -
+            title: "Contacts"
+            link: "apps/contacts/contacts.html"
+          -
+            title: "Calendar"
+            link: "apps/calendar/calendar.html"
+          -
+            title: "Notebook"
+            link: "apps/notebook/notebook.html"
+          -
+            title: "Taskboard"
+            link: "apps/taskboard/taskboard.html"
+          -
+            title: "Documents"
+            slug: "apps/documents"
+            children:
+              -
+                title: "Articles"
+                link: "apps/documents/articles.html"
+              -
+                title: "Categories"
+                link: "apps/documents/categories.html"
+              -
+                title: "Article"
+                link: "apps/documents/article.html"
+          -
+            title: "Forum"
+            link: "apps/forum/forum.html"
+          -
+            title: "Message"
+            link: "apps/message/message.html"
+          -
+            title: "Projects"
+            link: "apps/projects/projects.html"
+          -
+            title: "Mailbox"
+            link: "apps/mailbox/mailbox.html"
+          -
+            title: "Media"
+            link: "apps/media/overview.html"
+          -
+            title: "Work"
+            link: "apps/work/work.html"
+          -
+            title: "Location"
+            link: "apps/location/location.html"
+          -
+            title: "Travel"
+            link: "apps/travel/travel.html"
+          # -
+          #   title: "Users"
+          #
+          #   link: "apps/users/users.html"

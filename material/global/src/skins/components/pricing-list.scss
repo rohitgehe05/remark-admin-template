@@ -1,0 +1,65 @@
+// Name:            Pricing List
+//
+// Component:       `pricing-list`
+//
+// Modifiers:       'pricing-header'
+//                  'pricing-title'
+//                  'pricing-price'
+//                  'pricing-period'
+//                  'pricing-features'
+//                  'pricing-footer'
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+
+$pricing-list-border-color:          $border-color-base !default;
+
+$pricing-list-box-shadow:            0 2px 16px 1px rgba(0, 0, 0, 0.1) !default;
+
+// Component: Pricing List
+// ========================================================================
+
+.pricing-list {
+  box-shadow: $pricing-list-box-shadow;
+  [class^="bg-"],
+  [class*="bg-"] {
+    &,
+    * {
+      color: $inverse;
+    }
+  }
+
+  // Modifier: `pricing-header`
+  // ========================================================================
+  .pricing-header {
+    border-bottom: 1px solid $pricing-list-border-color;
+  }
+
+  // Modifier: `pricing-title`
+  // ========================================================================
+  // Modifier: `pricing-price`
+  // ========================================================================
+  .pricing-price {
+    color: $title-color;
+  }
+
+  // Modifier: `pricing-period`
+  // ========================================================================
+
+  // Modifier: `pricing-features`
+  // ========================================================================
+  .pricing-features {
+    li {
+      border-top: 1px dashed $pricing-list-border-color;
+      &:first-child {
+        border-top: none;
+      }
+    }
+  }
+
+  // Modifier: `pricing-footer`
+  // ========================================================================
+}

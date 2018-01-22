@@ -1,0 +1,33 @@
+// Name:            Button groups
+//
+// Component:       `btn-group`
+//
+// ========================================================================
+// Variables
+// ========================================================================
+
+$btn-group-shadow:            $btn-shadow !default;
+
+// Component: Button groups
+// ========================================================================
+
+.btn-group {
+  &,
+  &-vertical {
+    // box-shadow: $btn-group-shadow; //to fix remark-v4 issue#301 ---Kevin_y
+
+    > .btn,
+    .btn-group,
+    .btn-group-vertical {
+      box-shadow: none;
+    }
+  }
+
+  &-flat {
+    box-shadow: none;
+  }
+}
+
+.btn-group.open .dropdown-toggle {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05);
+}

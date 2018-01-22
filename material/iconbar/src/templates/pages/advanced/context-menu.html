@@ -1,0 +1,99 @@
+---
+title: Context Menu
+---
+
+{{#extend "layout-default"}}
+  {{#content "css_vendor" mode="append"}}
+    <link rel="stylesheet" href="{{global}}/vendor/jquery-contextmenu/jquery.contextMenu.css">
+  {{/content}}
+
+
+  {{#content "js_vendor" mode="append"}}
+    <script src="{{global}}/vendor/jquery-contextmenu/jquery.contextMenu.js"></script>
+  {{/content}}
+
+
+  {{#content "scripts" mode="replace"}}
+    <script src="{{assets}}/examples/js/advanced/context-menu.js"></script>
+  {{/content}}
+
+  {{#content "body"}}
+
+    <!-- Page -->
+    <div class="page">
+      <div class="page-header">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{{dest 'index.html'}}">Home</a></li>
+          <li class="breadcrumb-item active">Advanced UI</li>
+        </ol>
+        <h1 class="page-title">Context Menu</h1>
+        <div class="page-header-actions">
+          <a class="btn btn-sm btn-inverse btn-round" href="https://github.com/swisnl/jQuery-contextMenu"
+            target="_blank">
+        <i class="icon md-link" aria-hidden="true"></i>
+        <span class="hidden-sm-down">Official Website</span>
+      </a>
+        </div>
+      </div>
+
+      <div class="page-content">
+        <div class="alert alert-alt alert-primary alert-dismissible" role="alert">
+          <strong>INFO : </strong>Plugin 'Bootstrap Context Menu' is unmaintained! And
+          it rely on Bootstrap v3. Use plugin
+          <a class="alert-link" href="https://github.com/swisnl/jQuery-contextMenu">'jQuery-contextMenu'</a>          instead of it.
+        </div>
+        <!-- Panel Context Menu -->
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Examples
+              <span class="panel-desc">Right click inside the box to trigger the menu</span>
+            </h3>
+          </div>
+          <div class="panel-body container-fluid">
+            <div class="row row-lg">
+              <div class="col-lg-6">
+                <!-- Example Demo 1 -->
+                <div class="example-wrap">
+                  <h4 class="example-title">Demo 1</h4>
+                  <div class="example">
+                    <div id="simpleContextMenu" class="h-150 bg-grey-200"></div>
+                  </div>
+                </div>
+                <!-- End Example Demo 1 -->
+              </div>
+
+              <div class="col-lg-6">
+                <!-- Example Demo 2 -->
+                <div class="example-wrap">
+                  <h4 class="example-title">Demo 2</h4>
+                  <div class="example">
+                    <div class="contextMenu-example2">This is an area where the context menu is active
+                      <span class="bg-blue-grey-100">However, we wont allow it here.</span> But anywhere else
+                      in this text should be perfectly fine. This one is started
+                      with only javascript</div>
+                  </div>
+                </div>
+                <!-- End Example Demo 2 -->
+              </div>
+
+              <div class="col-lg-6">
+                <!-- Example Demo 3 -->
+                <div class="example-wrap">
+                  <h4 class="example-title">Demo 3</h4>
+                  <p>Show the menu name of the item that was selected</p>
+                  <div class="example">
+                    <div class="contextMenu-example3 h-150 bg-grey-200"></div>
+                  </div>
+                </div>
+                <!-- End Example Demo 3 -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Panel Context Menu -->
+      </div>
+    </div>
+    <!-- End Page -->
+
+  {{/content}}
+{{/extend}}

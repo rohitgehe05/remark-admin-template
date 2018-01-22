@@ -1,0 +1,69 @@
+---
+title: Icons
+---
+
+{{#extend "layout-default"}}
+  {{#content "css_vendor" mode="append"}}
+    <link rel="stylesheet" href="{{global}}/vendor/asrange/asRange.css">
+  {{/content}}
+
+  {{#content "css" mode="prepend"}}
+    <link rel="stylesheet" href="{{assets}}/examples/css/uikit/icon.css">
+  {{/content}}
+
+
+  {{#content "js_vendor" mode="append"}}
+    <script src="{{global}}/vendor/asrange/jquery-asRange.min.js"></script>
+  {{/content}}
+
+
+  {{#content "scripts" mode="replace"}}
+    <script src="{{assets}}/examples/js/uikit/icon.js"></script>
+  {{/content}}
+
+  {{#content "body"}}
+
+
+    <div class="page">
+      <div class="page-header">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{{dest 'uikit/icons.html'}}">Icons</a></li>
+          <li class="breadcrumb-item active">Brand Icon</li>
+        </ol>
+        <div class="page-header-actions">
+          <a class="btn btn-sm btn-primary btn-round" href="" target="_blank">
+        <i class="icon md-link" aria-hidden="true"></i>
+        <span class="hidden-sm-down">Official Website</span>
+      </a>
+        </div>
+      </div>
+      <div class="page-content container-fluid">
+        <div class="row py-30">
+          <div class="col-md-12 text-center">
+            <h2>Search from Brand Icon.</h2>
+            <form role="search">
+              <div class="input-search">
+                <input type="text" class="form-control round" placeholder="Search icon...">
+                <button type="submit" class="input-search-btn">
+                  <i class="icon md-search" aria-hidden="true"></i>
+                </button>
+              </div>
+            </form>
+            <div class="mb-25">
+              <div class="asRange" id="icon_change" data-namespace="rangeUi" data-step="1" data-min="16"
+                data-max="64" data-value="24"></div>
+              <span id="icon_size">24px</span>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-body container-fluid">
+            <div class="row">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  {{/content}}
+{{/extend}}

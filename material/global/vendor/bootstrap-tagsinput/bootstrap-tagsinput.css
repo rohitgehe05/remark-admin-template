@@ -1,0 +1,72 @@
+.bootstrap-tagsinput {
+  display: inline-block;
+  max-width: 100%;
+  padding: .429rem 1.072rem;
+  line-height: 1.57142857;
+  color: #757575;
+  vertical-align: middle;
+  cursor: text;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: .215rem;
+  box-shadow: none;
+}
+
+.bootstrap-tagsinput input {
+  width: auto !important;
+  max-width: inherit;
+  padding: 0 6px;
+  margin: 0;
+  line-height: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.bootstrap-tagsinput input:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.bootstrap-tagsinput .form-control input::-moz-placeholder {
+  color: #9e9e9e;
+  opacity: 1;
+}
+
+.bootstrap-tagsinput .form-control input:-ms-input-placeholder {
+  color: #9e9e9e;
+}
+
+.bootstrap-tagsinput .form-control input::-webkit-input-placeholder {
+  color: #9e9e9e;
+}
+
+.bootstrap-tagsinput .tag {
+  margin: 1px;
+  margin-right: 2px;
+  border: 1px solid transparent;
+}
+
+.bootstrap-tagsinput .tag:hover {
+  border: 1px solid #5c6bc0;
+}
+
+.bootstrap-tagsinput .tag:hover:active {
+  border-color: #3949ab;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"] {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.bootstrap-tagsinput .tag [data-role="remove"]:after {
+  padding: 0 2px;
+  content: "x";
+}
+
+.bootstrap-tagsinput .tag.label {
+  display: inline-block;
+  margin: 0 0 2px;
+}

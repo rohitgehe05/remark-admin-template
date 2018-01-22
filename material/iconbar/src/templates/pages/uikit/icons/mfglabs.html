@@ -1,0 +1,1191 @@
+---
+title: Icons
+---
+
+{{#extend "layout-default"}}
+  {{#content "css_vendor" mode="append"}}
+    <link rel="stylesheet" href="{{global}}/vendor/asrange/asRange.css">
+  {{/content}}
+
+  {{#content "css" mode="prepend"}}
+    <link rel="stylesheet" href="{{assets}}/examples/css/uikit/icon.css">
+  {{/content}}
+
+
+  {{#content "fonts" mode="prepend"}}
+    <link rel="stylesheet" href="{{global}}/fonts/mfglabs/mfglabs.css">
+  {{/content}}
+
+  {{#content "js_vendor" mode="append"}}
+    <script src="{{global}}/vendor/asrange/jquery-asRange.min.js"></script>
+  {{/content}}
+
+
+  {{#content "scripts" mode="replace"}}
+    <script src="{{assets}}/examples/js/uikit/icon.js"></script>
+  {{/content}}
+
+  {{#content "body"}}
+
+
+    <div class="page">
+      <div class="page-header">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{{dest 'uikit/icons.html'}}">Icons</a></li>
+          <li class="breadcrumb-item active">Mfglabs</li>
+        </ol>
+        <div class="page-header-actions">
+          <a class="btn btn-sm btn-primary btn-round" href="https://github.com/MfgLabs/mfglabs-iconset"
+            target="_blank">
+        <i class="icon md-link" aria-hidden="true"></i>
+        <span class="hidden-sm-down">Official Website</span>
+      </a>
+        </div>
+      </div>
+      <div class="page-content container-fluid">
+        <div class="row py-30">
+          <div class="col-md-12 text-center">
+            <h2>Search from Mfglabs.</h2>
+            <form role="search">
+              <div class="input-search">
+                <input type="text" class="form-control round" placeholder="Search icon...">
+                <button type="submit" class="input-search-btn">
+                  <i class="icon md-search" aria-hidden="true"></i>
+                </button>
+              </div>
+            </form>
+            <div class="mb-25">
+              <div class="asRange" id="icon_change" data-namespace="rangeUi" data-step="1" data-min="16"
+                data-max="64" data-value="24"></div>
+              <span id="icon_size">24px</span>
+            </div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-body container-fluid">
+            <div class="row">
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="cloud">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-cloud" aria-hidden="true"></i>
+                  <div class="icon-title">cloud</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="at">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-at" aria-hidden="true"></i>
+                  <div class="icon-title">at</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="plus">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-plus" aria-hidden="true"></i>
+                  <div class="icon-title">plus</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="minus">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-minus" aria-hidden="true"></i>
+                  <div class="icon-title">minus</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="arrow-up">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-arrow-up" aria-hidden="true"></i>
+                  <div class="icon-title">arrow-up</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="arrow-down">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-arrow-down" aria-hidden="true"></i>
+                  <div class="icon-title">arrow-down</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="arrow-right">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-arrow-right" aria-hidden="true"></i>
+                  <div class="icon-title">arrow-right</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="arrow-left">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-arrow-left" aria-hidden="true"></i>
+                  <div class="icon-title">arrow-left</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="chevron-down">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-chevron-down" aria-hidden="true"></i>
+                  <div class="icon-title">chevron-down</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="chevron-up">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-chevron-up" aria-hidden="true"></i>
+                  <div class="icon-title">chevron-up</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="chevron-right">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-chevron-right" aria-hidden="true"></i>
+                  <div class="icon-title">chevron-right</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="chevron-left">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-chevron-left" aria-hidden="true"></i>
+                  <div class="icon-title">chevron-left</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="reorder">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-reorder" aria-hidden="true"></i>
+                  <div class="icon-title">reorder</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="list">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-list" aria-hidden="true"></i>
+                  <div class="icon-title">list</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="reorder-square">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-reorder-square" aria-hidden="true"></i>
+                  <div class="icon-title">reorder-square</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="reorder-square-line">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-reorder-square-line" aria-hidden="true"></i>
+                  <div class="icon-title">reorder-square-line</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="coverflow">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-coverflow" aria-hidden="true"></i>
+                  <div class="icon-title">coverflow</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="coverflow-line">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-coverflow-line" aria-hidden="true"></i>
+                  <div class="icon-title">coverflow-line</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="pause">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-pause" aria-hidden="true"></i>
+                  <div class="icon-title">pause</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="play">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-play" aria-hidden="true"></i>
+                  <div class="icon-title">play</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="step-forward">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-step-forward" aria-hidden="true"></i>
+                  <div class="icon-title">step-forward</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="step-backward">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-step-backward" aria-hidden="true"></i>
+                  <div class="icon-title">step-backward</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="fast-forward">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-fast-forward" aria-hidden="true"></i>
+                  <div class="icon-title">fast-forward</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="fast-backward">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-fast-backward" aria-hidden="true"></i>
+                  <div class="icon-title">fast-backward</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="cloud-upload">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-cloud-upload" aria-hidden="true"></i>
+                  <div class="icon-title">cloud-upload</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="cloud-download">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-cloud-download" aria-hidden="true"></i>
+                  <div class="icon-title">cloud-download</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="data-science">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-data-science" aria-hidden="true"></i>
+                  <div class="icon-title">data-science</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="data-science-black">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-data-science-black" aria-hidden="true"></i>
+                  <div class="icon-title">data-science-black</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="globe">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-globe" aria-hidden="true"></i>
+                  <div class="icon-title">globe</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="globe-black">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-globe-black" aria-hidden="true"></i>
+                  <div class="icon-title">globe-black</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="math-ico">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-math-ico" aria-hidden="true"></i>
+                  <div class="icon-title">math-ico</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="math">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-math" aria-hidden="true"></i>
+                  <div class="icon-title">math</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="math-black">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-math-black" aria-hidden="true"></i>
+                  <div class="icon-title">math-black</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="paperplane-ico">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-paperplane-ico" aria-hidden="true"></i>
+                  <div class="icon-title">paperplane-ico</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="paperplane">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-paperplane" aria-hidden="true"></i>
+                  <div class="icon-title">paperplane</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="paperplane-black">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-paperplane-black" aria-hidden="true"></i>
+                  <div class="icon-title">paperplane-black</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="color-balance">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-color-balance" aria-hidden="true"></i>
+                  <div class="icon-title">color-balance</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="star">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-star" aria-hidden="true"></i>
+                  <div class="icon-title">star</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="star-half">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-star-half" aria-hidden="true"></i>
+                  <div class="icon-title">star-half</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="star-empty">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-star-empty" aria-hidden="true"></i>
+                  <div class="icon-title">star-empty</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="star-half-empty">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-star-half-empty" aria-hidden="true"></i>
+                  <div class="icon-title">star-half-empty</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="reload">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-reload" aria-hidden="true"></i>
+                  <div class="icon-title">reload</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="heart">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-heart" aria-hidden="true"></i>
+                  <div class="icon-title">heart</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="heart-broken">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-heart-broken" aria-hidden="true"></i>
+                  <div class="icon-title">heart-broken</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="hashtag">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-hashtag" aria-hidden="true"></i>
+                  <div class="icon-title">hashtag</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="reply">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-reply" aria-hidden="true"></i>
+                  <div class="icon-title">reply</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="retweet">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-retweet" aria-hidden="true"></i>
+                  <div class="icon-title">retweet</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="signin">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-signin" aria-hidden="true"></i>
+                  <div class="icon-title">signin</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="signout">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-signout" aria-hidden="true"></i>
+                  <div class="icon-title">signout</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="download">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-download" aria-hidden="true"></i>
+                  <div class="icon-title">download</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="upload">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-upload" aria-hidden="true"></i>
+                  <div class="icon-title">upload</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="placepin">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-placepin" aria-hidden="true"></i>
+                  <div class="icon-title">placepin</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="display-screen">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-display-screen" aria-hidden="true"></i>
+                  <div class="icon-title">display-screen</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="tablet">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-tablet" aria-hidden="true"></i>
+                  <div class="icon-title">tablet</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="smartphone">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-smartphone" aria-hidden="true"></i>
+                  <div class="icon-title">smartphone</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="connected-object">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-connected-object" aria-hidden="true"></i>
+                  <div class="icon-title">connected-object</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="lock">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-lock" aria-hidden="true"></i>
+                  <div class="icon-title">lock</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="unlock">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-unlock" aria-hidden="true"></i>
+                  <div class="icon-title">unlock</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="camera">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-camera" aria-hidden="true"></i>
+                  <div class="icon-title">camera</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="isight">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-isight" aria-hidden="true"></i>
+                  <div class="icon-title">isight</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="video-camera">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-video-camera" aria-hidden="true"></i>
+                  <div class="icon-title">video-camera</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="random">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-random" aria-hidden="true"></i>
+                  <div class="icon-title">random</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="message">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-message" aria-hidden="true"></i>
+                  <div class="icon-title">message</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="discussion">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-discussion" aria-hidden="true"></i>
+                  <div class="icon-title">discussion</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="calendar">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-calendar" aria-hidden="true"></i>
+                  <div class="icon-title">calendar</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="ringbell">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-ringbell" aria-hidden="true"></i>
+                  <div class="icon-title">ringbell</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="movie">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-movie" aria-hidden="true"></i>
+                  <div class="icon-title">movie</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="mail">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-mail" aria-hidden="true"></i>
+                  <div class="icon-title">mail</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="pen">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-pen" aria-hidden="true"></i>
+                  <div class="icon-title">pen</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="settings">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-settings" aria-hidden="true"></i>
+                  <div class="icon-title">settings</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="measure">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-measure" aria-hidden="true"></i>
+                  <div class="icon-title">measure</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="vector">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-vector" aria-hidden="true"></i>
+                  <div class="icon-title">vector</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="vector-pen">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-vector-pen" aria-hidden="true"></i>
+                  <div class="icon-title">vector-pen</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="mute-on">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-mute-on" aria-hidden="true"></i>
+                  <div class="icon-title">mute-on</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="mute-off">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-mute-off" aria-hidden="true"></i>
+                  <div class="icon-title">mute-off</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="home">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-home" aria-hidden="true"></i>
+                  <div class="icon-title">home</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="sheet">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-sheet" aria-hidden="true"></i>
+                  <div class="icon-title">sheet</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="arrow-big-right">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-arrow-big-right" aria-hidden="true"></i>
+                  <div class="icon-title">arrow-big-right</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="arrow-big-left">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-arrow-big-left" aria-hidden="true"></i>
+                  <div class="icon-title">arrow-big-left</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="arrow-big-down">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-arrow-big-down" aria-hidden="true"></i>
+                  <div class="icon-title">arrow-big-down</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="arrow-big-up">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-arrow-big-up" aria-hidden="true"></i>
+                  <div class="icon-title">arrow-big-up</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="dribbble-circle">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-dribbble-circle" aria-hidden="true"></i>
+                  <div class="icon-title">dribbble-circle</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="dribbble">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-dribbble" aria-hidden="true"></i>
+                  <div class="icon-title">dribbble</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="facebook-circle">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-facebook-circle" aria-hidden="true"></i>
+                  <div class="icon-title">facebook-circle</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="facebook">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-facebook" aria-hidden="true"></i>
+                  <div class="icon-title">facebook</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="git-circle-alt">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-git-circle-alt" aria-hidden="true"></i>
+                  <div class="icon-title">git-circle-alt</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="git-circle">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-git-circle" aria-hidden="true"></i>
+                  <div class="icon-title">git-circle</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="git">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-git" aria-hidden="true"></i>
+                  <div class="icon-title">git</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="octopus">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-octopus" aria-hidden="true"></i>
+                  <div class="icon-title">octopus</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="twitter-circle">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-twitter-circle" aria-hidden="true"></i>
+                  <div class="icon-title">twitter-circle</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="twitter">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-twitter" aria-hidden="true"></i>
+                  <div class="icon-title">twitter</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="google-plus-circle">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-google-plus-circle" aria-hidden="true"></i>
+                  <div class="icon-title">google-plus-circle</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="google-plus">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-google-plus" aria-hidden="true"></i>
+                  <div class="icon-title">google-plus</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="linked-in-circle">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-linked-in-circle" aria-hidden="true"></i>
+                  <div class="icon-title">linked-in-circle</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="linked-in">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-linked-in" aria-hidden="true"></i>
+                  <div class="icon-title">linked-in</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="instagram">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-instagram" aria-hidden="true"></i>
+                  <div class="icon-title">instagram</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="instagram-circle">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-instagram-circle" aria-hidden="true"></i>
+                  <div class="icon-title">instagram-circle</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="mfg-icon">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-mfg-icon" aria-hidden="true"></i>
+                  <div class="icon-title">mfg-icon</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="xing">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-xing" aria-hidden="true"></i>
+                  <div class="icon-title">xing</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="xing-circle">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-xing-circle" aria-hidden="true"></i>
+                  <div class="icon-title">xing-circle</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="mfg-icon-circle">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-mfg-icon-circle" aria-hidden="true"></i>
+                  <div class="icon-title">mfg-icon-circle</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="user">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-user" aria-hidden="true"></i>
+                  <div class="icon-title">user</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="user-male">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-user-male" aria-hidden="true"></i>
+                  <div class="icon-title">user-male</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="user-female">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-user-female" aria-hidden="true"></i>
+                  <div class="icon-title">user-female</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="users">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-users" aria-hidden="true"></i>
+                  <div class="icon-title">users</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="file-open">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-file-open" aria-hidden="true"></i>
+                  <div class="icon-title">file-open</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="file-close">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-file-close" aria-hidden="true"></i>
+                  <div class="icon-title">file-close</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="file-alt">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-file-alt" aria-hidden="true"></i>
+                  <div class="icon-title">file-alt</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="file-close-alt">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-file-close-alt" aria-hidden="true"></i>
+                  <div class="icon-title">file-close-alt</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="attachment">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-attachment" aria-hidden="true"></i>
+                  <div class="icon-title">attachment</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="check">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-check" aria-hidden="true"></i>
+                  <div class="icon-title">check</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="cross-mark">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-cross-mark" aria-hidden="true"></i>
+                  <div class="icon-title">cross-mark</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="cancel-circle">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-cancel-circle" aria-hidden="true"></i>
+                  <div class="icon-title">cancel-circle</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="check-circle">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-check-circle" aria-hidden="true"></i>
+                  <div class="icon-title">check-circle</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="magnifying">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-magnifying" aria-hidden="true"></i>
+                  <div class="icon-title">magnifying</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="inbox">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-inbox" aria-hidden="true"></i>
+                  <div class="icon-title">inbox</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="clock">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-clock" aria-hidden="true"></i>
+                  <div class="icon-title">clock</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="stopwatch">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-stopwatch" aria-hidden="true"></i>
+                  <div class="icon-title">stopwatch</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="hourglass">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-hourglass" aria-hidden="true"></i>
+                  <div class="icon-title">hourglass</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="trophy">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-trophy" aria-hidden="true"></i>
+                  <div class="icon-title">trophy</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="unlock-alt">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-unlock-alt" aria-hidden="true"></i>
+                  <div class="icon-title">unlock-alt</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="lock-alt">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-lock-alt" aria-hidden="true"></i>
+                  <div class="icon-title">lock-alt</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="arrow-doubled-right">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-arrow-doubled-right" aria-hidden="true"></i>
+                  <div class="icon-title">arrow-doubled-right</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="arrow-doubled-left">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-arrow-doubled-left" aria-hidden="true"></i>
+                  <div class="icon-title">arrow-doubled-left</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="arrow-doubled-down">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-arrow-doubled-down" aria-hidden="true"></i>
+                  <div class="icon-title">arrow-doubled-down</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="arrow-doubled-up">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-arrow-doubled-up" aria-hidden="true"></i>
+                  <div class="icon-title">arrow-doubled-up</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="link">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-link" aria-hidden="true"></i>
+                  <div class="icon-title">link</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="warning">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-warning" aria-hidden="true"></i>
+                  <div class="icon-title">warning</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="warning-alt">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-warning-alt" aria-hidden="true"></i>
+                  <div class="icon-title">warning-alt</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="magnifying-plus">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-magnifying-plus" aria-hidden="true"></i>
+                  <div class="icon-title">magnifying-plus</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="magnifying-minus">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-magnifying-minus" aria-hidden="true"></i>
+                  <div class="icon-title">magnifying-minus</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="white-question">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-white-question" aria-hidden="true"></i>
+                  <div class="icon-title">white-question</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="black-question">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-black-question" aria-hidden="true"></i>
+                  <div class="icon-title">black-question</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="stop">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-stop" aria-hidden="true"></i>
+                  <div class="icon-title">stop</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="share">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-share" aria-hidden="true"></i>
+                  <div class="icon-title">share</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="eye">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-eye" aria-hidden="true"></i>
+                  <div class="icon-title">eye</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="trash-can">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-trash-can" aria-hidden="true"></i>
+                  <div class="icon-title">trash-can</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="hard-drive">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-hard-drive" aria-hidden="true"></i>
+                  <div class="icon-title">hard-drive</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="information-black">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-information-black" aria-hidden="true"></i>
+                  <div class="icon-title">information-black</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="information-white">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-information-white" aria-hidden="true"></i>
+                  <div class="icon-title">information-white</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="printer">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-printer" aria-hidden="true"></i>
+                  <div class="icon-title">printer</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="letter">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-letter" aria-hidden="true"></i>
+                  <div class="icon-title">letter</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="soundcloud">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-soundcloud" aria-hidden="true"></i>
+                  <div class="icon-title">soundcloud</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="soundcloud-circle">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-soundcloud-circle" aria-hidden="true"></i>
+                  <div class="icon-title">soundcloud-circle</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="anchor">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-anchor" aria-hidden="true"></i>
+                  <div class="icon-title">anchor</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="female-sign">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-female-sign" aria-hidden="true"></i>
+                  <div class="icon-title">female-sign</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="male-sign">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-male-sign" aria-hidden="true"></i>
+                  <div class="icon-title">male-sign</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="joystick">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-joystick" aria-hidden="true"></i>
+                  <div class="icon-title">joystick</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="high-voltage">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-high-voltage" aria-hidden="true"></i>
+                  <div class="icon-title">high-voltage</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="fire">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-fire" aria-hidden="true"></i>
+                  <div class="icon-title">fire</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="newspaper">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-newspaper" aria-hidden="true"></i>
+                  <div class="icon-title">newspaper</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="chart">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-chart" aria-hidden="true"></i>
+                  <div class="icon-title">chart</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="spread">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-spread" aria-hidden="true"></i>
+                  <div class="icon-title">spread</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="spinner-1">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-spinner-1" aria-hidden="true"></i>
+                  <div class="icon-title">spinner-1</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="spinner-2">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-spinner-2" aria-hidden="true"></i>
+                  <div class="icon-title">spinner-2</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="chart-alt">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-chart-alt" aria-hidden="true"></i>
+                  <div class="icon-title">chart-alt</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="label">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-label" aria-hidden="true"></i>
+                  <div class="icon-title">label</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="brush">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-brush" aria-hidden="true"></i>
+                  <div class="icon-title">brush</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="refresh">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-refresh" aria-hidden="true"></i>
+                  <div class="icon-title">refresh</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node" aria-hidden="true"></i>
+                  <div class="icon-title">node</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-2">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-2" aria-hidden="true"></i>
+                  <div class="icon-title">node-2</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-3">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-3" aria-hidden="true"></i>
+                  <div class="icon-title">node-3</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="link-2-nodes">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-link-2-nodes" aria-hidden="true"></i>
+                  <div class="icon-title">link-2-nodes</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="link-3-nodes">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-link-3-nodes" aria-hidden="true"></i>
+                  <div class="icon-title">link-3-nodes</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="link-loop-nodes">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-link-loop-nodes" aria-hidden="true"></i>
+                  <div class="icon-title">link-loop-nodes</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-size">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-size" aria-hidden="true"></i>
+                  <div class="icon-title">node-size</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-color">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-color" aria-hidden="true"></i>
+                  <div class="icon-title">node-color</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="layout-directed">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-layout-directed" aria-hidden="true"></i>
+                  <div class="icon-title">layout-directed</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="layout-radial">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-layout-radial" aria-hidden="true"></i>
+                  <div class="icon-title">layout-radial</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="layout-hierarchical">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-layout-hierarchical" aria-hidden="true"></i>
+                  <div class="icon-title">layout-hierarchical</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-link-direction">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-link-direction" aria-hidden="true"></i>
+                  <div class="icon-title">node-link-direction</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-link-short-path">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-link-short-path" aria-hidden="true"></i>
+                  <div class="icon-title">node-link-short-path</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-cluster">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-cluster" aria-hidden="true"></i>
+                  <div class="icon-title">node-cluster</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="display-graph">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-display-graph" aria-hidden="true"></i>
+                  <div class="icon-title">display-graph</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-link-weight">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-link-weight" aria-hidden="true"></i>
+                  <div class="icon-title">node-link-weight</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="more-node-links">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-more-node-links" aria-hidden="true"></i>
+                  <div class="icon-title">more-node-links</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-shape">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-shape" aria-hidden="true"></i>
+                  <div class="icon-title">node-shape</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-icon">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-icon" aria-hidden="true"></i>
+                  <div class="icon-title">node-icon</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-text">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-text" aria-hidden="true"></i>
+                  <div class="icon-title">node-text</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-link-text">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-link-text" aria-hidden="true"></i>
+                  <div class="icon-title">node-link-text</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-link-color">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-link-color" aria-hidden="true"></i>
+                  <div class="icon-title">node-link-color</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="node-link-shape">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-node-link-shape" aria-hidden="true"></i>
+                  <div class="icon-title">node-link-shape</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="credit-card">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-credit-card" aria-hidden="true"></i>
+                  <div class="icon-title">credit-card</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="disconnect">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-disconnect" aria-hidden="true"></i>
+                  <div class="icon-title">disconnect</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="graph">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-graph" aria-hidden="true"></i>
+                  <div class="icon-title">graph</div>
+                </div>
+              </div>
+              <div class="col-xl-1 col-lg-2 col-md-3 col-4 icondemo-wrap vertical-align" data-name="new-user">
+                <div class="icondemo vertical-align-middle">
+                  <i class="icon ml-new-user" aria-hidden="true"></i>
+                  <div class="icon-title">new-user</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  {{/content}}
+{{/extend}}

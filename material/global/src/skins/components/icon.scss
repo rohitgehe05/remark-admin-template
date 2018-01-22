@@ -1,0 +1,106 @@
+// Name:            Icon
+//
+// Component:       `icon`
+//
+// Modifiers:       'icon-circle'
+//                  'icon-color'
+//                  'icon-color-alt'
+//                  'icon-lg'
+//                  'icon-2x'
+//                  'icon-3x'
+//                  'icon-4x'
+//                  'icon-5x'
+//                  'icon-fw'
+//                  'icon-ul'
+//                  'icon-border'
+//                  'icon-spin'
+//                  'icon-spin-reverse'
+//                  'icon-rotate'
+//                  'icon-flip'
+//                  'icon-stack'
+//
+// ========================================================================
+
+// Variables
+// ========================================================================
+
+$icon-border-color:  $gray-lighter !default;
+$icon-inverse:       $inverse !default;
+
+// Component: Icon
+// ========================================================================
+// Modifier: `icon-circle`
+// ========================================================================
+
+.icon-circle {
+
+  &:after {
+    background-color: inherit;
+  }
+}
+
+// Size Modifier
+// ========================================================================
+
+// Modifier: `icon-fw`
+// ========================================================================
+
+// Modifier: `icon-ul`
+// ========================================================================
+
+// Modifier: `icon-border`
+// ========================================================================
+
+.icon-border {
+  border: solid .08em $icon-border-color;
+}
+
+// Animate Modifier
+// ========================================================================
+
+// Modifier: `icon-spin`
+// -------------------------
+
+// Modifier: `icon-rotate`
+// -------------------------
+
+// Modifier: `icon-flip`
+// -------------------------
+
+// Modifier: `icon-stack`
+// ========================================================================
+
+.icon-stack {
+  &-inverse {
+    color: $icon-inverse;
+  }
+}
+
+// Color Modifier
+// ========================================================================
+
+// Modifier: `icon-color`
+// -------------------------
+
+.icon-color {
+  @include icon-color-variant($icon-color, $icon-hover-color, $icon-active-color);
+}
+
+// Modifier: `icon-color-alt`
+// -------------------------
+
+.icon-color-alt {
+  @include icon-color-variant($icon-alt-color, $icon-alt-hover-color, $icon-alt-active-color);
+}
+
+// Hook for IE8-9
+// ========================================================================
+
+// Keyframes Modifier
+// ========================================================================
+
+// Modifier: `icon-spin`
+// -------------------------
+
+// Modifier: `icon-spin-reverse`
+// -------------------------

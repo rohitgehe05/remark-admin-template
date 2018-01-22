@@ -1,0 +1,55 @@
+<!-- Core  -->
+<script src="{{assets}}/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+<script src="{{assets}}/vendor/jquery/jquery.js"></script>
+<script src="{{assets}}/vendor/popper-js/umd/popper.min.js"></script>
+<script src="{{assets}}/vendor/bootstrap/bootstrap.js"></script>
+<script src="{{assets}}/vendor/animsition/animsition.js"></script>
+<script src="{{assets}}/vendor/mousewheel/jquery.mousewheel.js"></script>
+<script src="{{assets}}/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+<script src="{{assets}}/vendor/asscrollable/jquery-asScrollable.js"></script>
+
+<!-- Plugins -->
+{{#block "js_vendor"}}
+<script src="{{assets}}/vendor/switchery/switchery.js"></script>
+<script src="{{assets}}/vendor/intro-js/intro.js"></script>
+<script src="{{assets}}/vendor/screenfull/screenfull.js"></script>
+<script src="{{assets}}/vendor/slidepanel/jquery-slidePanel.js"></script>
+{{/block}}
+
+<!-- Scripts -->
+{{#block "js"}}
+<script src="{{assets}}/js/Component.js"></script>
+<script src="{{assets}}/js/Plugin.js"></script>
+<script src="{{assets}}/js/Base.js"></script>
+<script src="{{assets}}/js/Config.js"></script>
+
+<script src="{{assets}}/js/Section/Menubar.js"></script>
+<script src="{{assets}}/js/Section/Sidebar.js"></script>
+<script src="{{assets}}/js/Section/PageAside.js"></script>
+<script src="{{assets}}/js/Plugin/menu.js"></script>
+
+<!-- Config -->
+<script src="{{assets}}/js/config/colors.js"></script>
+<script src="{{assets}}/js/config/tour.js"></script>
+<script>Config.set('assets', '{{assets}}');</script>
+
+<!-- Page -->
+<script src="{{assets}}/js/Site.js"></script>
+<script src="{{assets}}/js/Plugin/asscrollable.js"></script>
+<script src="{{assets}}/js/Plugin/slidepanel.js"></script>
+<script src="{{assets}}/js/Plugin/switchery.js"></script>
+{{/block}}
+
+{{#block "scripts"}}
+<script>
+  (function(document, window, $){
+    'use strict';
+
+    var Site = window.Site;
+    $(document).ready(function(){
+      Site.run();
+    });
+  })(document, window, jQuery);
+</script>
+{{/block}}
+

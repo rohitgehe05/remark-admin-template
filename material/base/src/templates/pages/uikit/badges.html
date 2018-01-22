@@ -1,0 +1,321 @@
+---
+title: Badges
+---
+
+{{#extend "layout-default"}}
+
+  {{#content "css" mode="prepend"}}
+    <link rel="stylesheet" href="{{assets}}/examples/css/uikit/badges.css">
+  {{/content}}
+
+
+  {{#content "body"}}
+
+    <!-- Page -->
+    <div class="page">
+      <div class="page-header">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{{dest 'index.html'}}">Home</a></li>
+          <li class="breadcrumb-item active">Basic UI</li>
+        </ol>
+        <h1 class="page-title">Badges</h1>
+        <div class="page-header-actions">
+          <button type="button" class="btn btn-sm btn-icon btn-inverse btn-round" data-toggle="tooltip"
+            data-original-title="Edit">
+            <i class="icon md-edit" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="btn btn-sm btn-icon btn-inverse btn-round" data-toggle="tooltip"
+            data-original-title="Refresh">
+            <i class="icon md-refresh" aria-hidden="true"></i>
+          </button>
+          <button type="button" class="btn btn-sm btn-icon btn-inverse btn-round" data-toggle="tooltip"
+            data-original-title="Setting">
+            <i class="icon md-settings" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="page-content">
+        <!-- Panel badges -->
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Tags</h3>
+          </div>
+
+          <div class="panel-body container-fluid">
+            <div class="row row-lg">
+              <div class="col-md-6 col-xl-4">
+                <!-- Example badges Default -->
+                <div class="example-wrap">
+                  <h4 class="example-title">Tags Default</h4>
+                  <p>Add any of the default mentioned modifier classes to change the
+                    appearance of a badge.</p>
+                  <div class="example">
+                    <span class="badge badge-default">Default</span>
+                    <span class="badge badge-primary">Primary</span>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-info">Info</span>
+                    <span class="badge badge-warning">Warning</span>
+                    <span class="badge badge-danger">Danger</span>
+                    <span class="badge badge-dark">Dark</span>
+                  </div>
+                </div>
+                <!-- End Example badges Default -->
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <!-- Example badges Round -->
+                <div class="example-wrap">
+                  <h4 class="example-title">badges Round</h4>
+                  <p>Round badges can used in taxonomies to provide an ad-hoc, user-generated
+                    scheme for classification. Add <code>.badge-round</code> to
+                    change its shape.</p>
+                  <div class="example">
+                    <span class="badge badge-round badge-default">Default</span>
+                    <span class="badge badge-round badge-primary">Primary</span>
+                    <span class="badge badge-round badge-success">Success</span>
+                    <span class="badge badge-round badge-info">Info</span>
+                    <span class="badge badge-round badge-warning">Warning</span>
+                    <span class="badge badge-round badge-danger">Danger</span>
+                    <span class="badge badge-round badge-dark">Dark</span>
+                  </div>
+                </div>
+                <!-- End Example badges Round -->
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <!-- Example badges Outline -->
+                <div class="example-wrap">
+                  <h4 class="example-title">badges Outline</h4>
+                  <p>The badge can have outline style and different border color options.
+                    Add <code>.badge-outline</code> to change its border style.</p>
+                  <div class="example">
+                    <span class="badge badge-outline badge-default">Default</span>
+                    <span class="badge badge-outline badge-primary">Primary</span>
+                    <span class="badge badge-outline badge-success">Success</span>
+                    <span class="badge badge-outline badge-info">Info</span>
+                    <span class="badge badge-outline badge-warning">Warning</span>
+                    <span class="badge badge-outline badge-danger">Danger</span>
+                    <span class="badge badge-outline badge-dark">Dark</span>
+                  </div>
+                </div>
+                <!-- End Example badges Outline -->
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <!-- Example badges Sizes -->
+                <div class="example-wrap">
+                  <h4 class="example-title">badges Sizes</h4>
+                  <p>Various badge sizes for common scenarios, from default size to
+                    large/small size, you can add additional class <code>.badge-lg</code>                    or <code>.badge-sm</code>.</p>
+                  <div class="example">
+                    <span class="badge badge-lg badge-primary">Large</span>
+                    <span class="badge badge-primary">Default</span>
+                    <span class="badge badge-sm badge-primary">Small</span>
+                  </div>
+                </div>
+                <!-- End Example badges Sizes -->
+              </div>
+
+              <div class="col-xl-8">
+                <!-- Example badges In Header -->
+                <div class="example-wrap">
+                  <h4 class="example-title">badges In Header</h4>
+                  <p>They show the information in combination with other visual heading
+                    elements by adding <code>&lt;span class=”badge badge-primary”&gt;</code>.</p>
+                  <div class="example">
+                    <h1>h1. Bootstrap heading
+                      <span class="badge badge-primary">New</span>
+                    </h1>
+                    <h2>h2. Heading
+                      <span class="badge badge-primary">New</span>
+                    </h2>
+                    <h3>h3. Heading
+                      <span class="badge badge-primary">New</span>
+                    </h3>
+                    <h4>h4. Heading
+                      <span class="badge badge-primary">New</span>
+                    </h4>
+                    <h5>h5. Heading
+                      <span class="badge badge-primary">New</span>
+                    </h5>
+                    <h6>h6. Heading
+                      <span class="badge badge-primary">New</span>
+                    </h6>
+                  </div>
+                </div>
+                <!-- End Example badges In Header -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Panel badges -->
+
+        <!-- Panel badge-pills -->
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Tag-pills</h3>
+          </div>
+
+          <div class="panel-body container-fluid">
+            <div class="row row-lg">
+              <div class="col-md-6 col-xl-4">
+                <!-- Example badge-pills Default -->
+                <div class="example-wrap">
+                  <h4 class="example-title">badge-pills Default</h4>
+                  <p>Wrap one of the seven contextual classes ( e.g. <code>.badge-success</code>                    ) for basic <code>.badge</code> <code>.badge-pill</code> class.
+                    Choose from success, info, warning, etc.</p>
+                  <div class="example">
+                    <span class="badge badge-pill badge-default">1</span>
+                    <span class="badge badge-pill badge-primary">2</span>
+                    <span class="badge badge-pill badge-success">3</span>
+                    <span class="badge badge-pill badge-info">4</span>
+                    <span class="badge badge-pill badge-warning">5</span>
+                    <span class="badge badge-pill badge-danger">6</span>
+                    <span class="badge badge-pill badge-dark">7</span>
+                  </div>
+
+                  <div class="example">
+                    <span class="badge badge-pill badge-default">11</span>
+                    <span class="badge badge-pill badge-primary">12</span>
+                    <span class="badge badge-pill badge-success">13</span>
+                    <span class="badge badge-pill badge-info">14</span>
+                    <span class="badge badge-pill badge-warning">15</span>
+                    <span class="badge badge-pill badge-danger">16</span>
+                    <span class="badge badge-pill badge-dark">17</span>
+                  </div>
+                </div>
+                <!-- End Example badge-pills Default -->
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <!-- Example badge-pills Sizes -->
+                <div class="example-wrap">
+                  <h4 class="example-title">badge-pills Sizes</h4>
+                  <p>Various badge-pills sizes for common scenarios, from default
+                    size to large/small size, you can add additional class <code>.badge-lg</code>                    or <code>.badge-sm</code>.</p>
+                  <div class="example">
+                    <span class="badge badge-pill badge-lg badge-primary">Large</span>
+                    <span class="badge badge-pill badge-primary">Default</span>
+                    <span class="badge badge-pill badge-sm badge-primary">Small</span>
+                  </div>
+                </div>
+                <!-- End Example badge-pills Sizes -->
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <!-- Example badge-pills In Button -->
+                <div class="example-wrap">
+                  <h4 class="example-title">badge-pills In Button</h4>
+                  <p>Easily highlight new or unread items by adding a <code>&lt;span class="badge badge-pill"&gt;</code>                    to button div.</p>
+                  <div class="example example-buttons">
+                    <button type="button" class="btn btn-primary">
+                      Update
+                      <span class="badge badge-pill">5</span>
+                    </button>
+                    <button type="button" class="btn btn-outline btn-primary">
+                      Update
+                      <span class="badge badge-pill">5</span>
+                    </button>
+                  </div>
+                </div>
+                <!-- End Example badge-pills In Button -->
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <!-- Example Absolute Positioning -->
+                <div class="example-wrap">
+                  <h4 class="example-title">Absolute Positioning</h4>
+                  <p>They’re commonly found in email cilents like Mail.app or on mobile
+                    apps for push notifications. Highligh unread items by adding
+                    <code>.badge</code>, <code>.badge-pill</code>, <code>.up</code>,
+                    <code>.badge-warning</code> class in <code>&lt;span&gt;</code>                    mark</p>
+                  <div class="example-2 mt-25">
+                    <span>
+                      <i class="icon md-notifications" aria-hidden="true"></i>
+                      <span class="badge badge-pill up badge-danger">5</span>
+                    </span>
+                    <span>
+                      <i class="icon md-email" aria-hidden="true"></i>
+                      <span class="badge badge-pill up badge-warning">3</span>
+                    </span>
+                    <span>
+                      <i class="icon md-account" aria-hidden="true"></i>
+                      <span class="badge badge-pill up badge-primary">3</span>
+                    </span>
+                    <span>
+                      <i class="icon md-inbox" aria-hidden="true"></i>
+                      <span class="badge badge-pill up badge-info">3</span>
+                    </span>
+                  </div>
+                </div>
+                <!-- End Example Absolute Positioning -->
+              </div>
+
+              <div class="col-md-6 col-xl-4">
+                <!-- Example Status badge-pills -->
+                <div class="example-wrap">
+                  <h4 class="example-title">Status badge-pills</h4>
+                  <p>You can use this examples to create status indicator badge-pills
+                    with <code>&lt;div class="avatar-online”&gt;</code> for profile
+                    images or similar elements.</p>
+                  <div class="example example-avatars">
+                    <div class="avatar avatar-online">
+                      <img src="{{global}}/portraits/2.jpg" alt="...">
+                      <i></i>
+                    </div>
+
+                    <div class="avatar avatar-off">
+                      <img src="{{global}}/portraits/3.jpg" alt="...">
+                      <i></i>
+                    </div>
+
+                    <div class="avatar avatar-busy">
+                      <img src="{{global}}/portraits/4.jpg" alt="...">
+                      <i></i>
+                    </div>
+
+                    <div class="avatar avatar-away">
+                      <img src="{{global}}/portraits/5.jpg" alt="...">
+                      <i></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Example Status badge-pills -->
+              </div>
+            </div>
+
+            <div class="row row-lg">
+              <div class="col-12">
+                <!-- Example badge-pills In Nav -->
+                <div class="example-wrap">
+                  <h4 class="example-title">badge-pills In Nav</h4>
+                  <p>Built-in styles are included for placing badge-pills in active
+                    states in pill navigations. Highlight unread items by adding
+                    a <code>&lt;span class="badge badge-pill"&gt;</code> to tab
+                    div.</p>
+                  <div class="example">
+                    <ul class="nav nav-tabs nav-tabs-line">
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link active" href="javascript:void(0)">
+                          <span>Home</span>
+                          <span class="badge badge-pill badge-danger">5</span>
+                        </a>
+                      </li>
+                      <li class="nav-item" role="presentation"><a class="nav-link" href="javascript:void(0)">Blog</a></li>
+                      <li class="nav-item" role="presentation"><a class="nav-link" href="javascript:void(0)">Profile</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- End Example badge-pills In Nav -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Panel badge-pills -->
+      </div>
+    </div>
+    <!-- End Page -->
+
+  {{/content}}
+{{/extend}}
